@@ -2,16 +2,19 @@
 
 import Image from "next/image";
 import logo from "../../public/SVG/header-logo.svg";
+import Link from "next/link";
 
 const HeaderLogo = () => {
   return (
-    <Image
-      className="md:w-[264px] md:h-[57px]"
-      src={logo}
-      alt="Logo"
-      width={132}
-      height={29}
-    />
+    <Link href="/">
+      <Image
+        className="md:w-[264px] md:h-[57px] relative z-20"
+        src={logo}
+        alt="Logo"
+        width={132}
+        height={29}
+      />
+    </Link>
   );
 };
 
