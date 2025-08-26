@@ -8,7 +8,7 @@ const HeaderLogo = () => {
   return (
     <Link href="/">
       <Image
-        className="md:w-[264px] md:h-[57px] relative z-20"
+        className="md:w-[264px] md:h-[57px] relative z-40"
         src={logo}
         alt="Logo"
         width={132}

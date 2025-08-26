@@ -10,7 +10,7 @@ export default function LanguageSelect({ locale, onLanguageChange }) {
   const languages = ["en", "ru", "pl"];
 
   return (
-    <div className="relative inline-block">
+    <div className="relative inline-block z-20">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="hidden md:flex items-center justify-between gap-4 cursor-pointer p-2 rounded-[20px] hover:bg-violet-hover/40 transition-all duration-300"

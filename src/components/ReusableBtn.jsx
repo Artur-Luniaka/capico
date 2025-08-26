@@ -16,7 +16,7 @@ export default function ReusableBtn({
 }) {
   return (
     <button
-      className={`relative flex items-center justify-center ${className}`}
+      className={`relative flex items-center justify-center z-20 ${className}`}
       {...props}
     >
       {children}

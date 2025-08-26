@@ -7,7 +7,7 @@ import closeIcon from "../../public/SVG/close-icon.svg";
 const BurgerIcon = ({ isOpen, onClick }) => {
   return (
     <div
-      className="relative z-20 cursor-pointer block lg:hidden"
+      className="relative z-40 cursor-pointer block lg:hidden"
       onClick={onClick}
     >
       <Image

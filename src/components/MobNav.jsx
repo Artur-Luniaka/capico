@@ -13,7 +13,7 @@ const MobNav = ({ isOpen, onLanguageChange }) => {
 
   return (
     <div
-      className={`pt-[50px] pb-5 px-[15px] z-10 absolute top-0 left-0 w-full h-full bg-black transition-all duration-300 ${
+      className={`pt-[50px] pb-5 px-[15px] z-30 absolute top-0 left-0 w-full h-full bg-black transition-all duration-300 ${
         isOpen ? "opacity-100 visible" : "opacity-0 invisible"
       }`}
     >

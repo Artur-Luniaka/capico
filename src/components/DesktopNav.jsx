@@ -8,7 +8,7 @@ const DesktopNav = () => {
   const { t } = useTranslation();
 
   return (
-    <nav className="hidden lg:flex gap-8">
+    <nav className="hidden lg:flex gap-8 relative z-30">
       <Link
         href="#"
         className="font-nekst-medium text-[25px] leading-[25px] tracking-[-0.03em] hover:text-violet-hover transition-all duration-300"
