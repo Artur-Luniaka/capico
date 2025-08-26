@@ -12,6 +12,11 @@ const nextConfig = {
       },
     ];
   },
+  // Добавляем поддержку видеофайлов
+  assetPrefix: "",
+  trailingSlash: false,
+  // Явно указываем, что видеофайлы должны быть статическими
+  staticPageGenerationTimeout: 120,
 };
 
 export default nextConfig;
