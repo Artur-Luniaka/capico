@@ -5,18 +5,23 @@ import BurgerIcon from "@/components/BurgerIcon";
 import ReusableBtn from "@/components/ReusableBtn";
 import LanguageSelect from "@/components/LanguageSelect";
 import DesktopNav from "@/components/DesktopNav";
-import { getTranslation } from "@/utils/i18n";
+import { getTranslation, detectLocale } from "@/utils/i18n";
 import { useState, useEffect } from "react";
 import MobNav from "@/components/MobNav";
 
 const Header = () => {
-  const [locale, setLocale] = useState("EN");
+  const [locale, setLocale] = useState("en");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const savedLocale = localStorage.getItem("locale") || "EN";
+    const savedLocale = localStorage.getItem("locale") || detectLocale();
     setLocale(savedLocale);
   }, []);
+
+  const handleLanguageChange = (newLocale) => {
+    setLocale(newLocale);
+    localStorage.setItem("locale", newLocale);
+  };
 
   useEffect(() => {
     if (locale) {
@@ -37,7 +42,10 @@ const Header = () => {
     <Container>
       <header className="px-[15px] pt-[25px] md:px-0 flex justify-between items-center">
         <HeaderLogo />
-        <LanguageSelect onLanguageChange={setLocale} />
+        <LanguageSelect
+          locale={locale}
+          onLanguageChange={handleLanguageChange}
+        />
         <DesktopNav locale={locale} />
         <div className="hidden md:flex">
           <ReusableBtn
@@ -55,7 +63,7 @@ const Header = () => {
         <MobNav
           locale={locale}
           isOpen={isMobileMenuOpen}
-          onLanguageChange={setLocale}
+          onLanguageChange={handleLanguageChange}
         />
       </header>
     </Container>

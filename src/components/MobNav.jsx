@@ -45,7 +45,10 @@ const MobNav = ({ locale, isOpen, onLanguageChange }) => {
           </nav>
         </div>
         <div className="mt-auto">
-          <LanguageSelectMob onLanguageChange={onLanguageChange} />
+          <LanguageSelectMob
+            locale={locale}
+            onLanguageChange={onLanguageChange}
+          />
         </div>
         <div className="mt-auto">
           <ReusableBtn
