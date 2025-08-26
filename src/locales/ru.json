@@ -5,5 +5,10 @@
   "partners": "партнеры",
   "knowledgeBase": "база знаний",
   "title": "Capico — Платформа для трейдинга с ботами и смарт-сделками",
-  "description": "Удобный и функциональный трейдинг на Binance, HTX, Bitget, OKX и Bybit"
+  "description": "Удобный и функциональный трейдинг на Binance, HTX, Bitget, OKX и Bybit",
+  "heroTitle": "Криптотрейдинг",
+  "heroTitleHighlight": "с ботами и умными сделками",
+  "heroButton": "Зарегистрироваться",
+  "heroSubtitle": "Торгуйте бесплатно на любимых биржах",
+  "soon": "Скоро"
 }

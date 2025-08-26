@@ -2,34 +2,36 @@
 
 import Link from "next/link";
 import React from "react";
-import { getTranslation } from "@/utils/i18n";
+import { useTranslation } from "@/utils/useTranslation";
 
-const DesktopNav = ({ locale }) => {
+const DesktopNav = () => {
+  const { t } = useTranslation();
+
   return (
     <nav className="hidden lg:flex gap-8">
       <Link
         href="#"
         className="font-nekst-medium text-[25px] leading-[25px] tracking-[-0.03em] hover:text-violet-hover transition-all duration-300"
       >
-        {getTranslation(locale, "features")}
+        {t("features")}
       </Link>
       <Link
         href="#"
         className="font-nekst-medium text-[25px] leading-[25px] tracking-[-0.03em] hover:text-violet-hover transition-all duration-300"
       >
-        {getTranslation(locale, "prices")}
+        {t("prices")}
       </Link>
       <Link
         href="#"
         className="font-nekst-medium text-[25px] leading-[25px] tracking-[-0.03em] hover:text-violet-hover transition-all duration-300"
       >
-        {getTranslation(locale, "partners")}
+        {t("partners")}
       </Link>
       <Link
         href="#"
         className="font-nekst-medium text-[25px] leading-[25px] tracking-[-0.03em] hover:text-violet-hover transition-all duration-300"
       >
-        {getTranslation(locale, "knowledgeBase")}
+        {t("knowledgeBase")}
       </Link>
     </nav>
   );

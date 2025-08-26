@@ -5,5 +5,10 @@
   "partners": "partners",
   "knowledgeBase": "knowledge base",
   "title": "Capico — Trading Platform with Bots and Smart Deals",
-  "description": "Convenient and functional trading on Binance, HTX, Bitget, OKX and Bybit"
+  "description": "Convenient and functional trading on Binance, HTX, Bitget, OKX and Bybit",
+  "heroTitle": "Crypto trading",
+  "heroTitleHighlight": "with bots and smart seals",
+  "heroButton": "Sign up now",
+  "heroSubtitle": "Trade for free on your favorite exchanges",
+  "soon": "Soon"
 }
